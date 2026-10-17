@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honey Bee Microbiota Krona Charts</title>
+<meta name="description" content="Interactive Krona charts of honey bee bacterial communities from public 16S rRNA gene libraries.">
+<style>
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #1d1d1d;
+    background: #ffffff;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.6em; line-height: 1.25; margin: 0 0 16px; }
+  h2 { font-size: 1.15em; margin: 0 0 4px; }
+  p { margin: 0 0 16px; }
+  ul { list-style: none; padding: 0; margin: 24px 0; }
+  li { margin: 0 0 20px; padding: 14px 16px; border: 1px solid #d6d6d6; border-radius: 6px; }
+  li p { margin: 0; }
+  a { color: #0b57d0; }
+  .note, footer { font-size: 0.9em; color: #555555; }
+  footer { margin-top: 32px; border-top: 1px solid #e3e3e3; padding-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Honey Bee Microbiota Krona Charts</h1>
+
+  <p>These interactive Krona charts show the bacterial taxa found in honey bee
+  samples, drawn as nested rings from phylum at the center out to species.
+  Slice size shows relative abundance; tick "Color by % Prevalence" to shade
+  each taxon from red (rare) to green (widespread). The data are the public 16S rRNA gene
+  sequence libraries compiled for Anderson and Copeland (2024),
+  <a href="https://doi.org/10.3389/frbee.2024.1410331">The honey bee "hive"
+  microbiota: meta-analysis reveals a native and aerobic microbiota prevalent
+  throughout the social resource niche</a>, <i>Frontiers in Bee Science</i>.
+  The charts themselves are not part of the published article.</p>
+
+  <ul>
+    <li>
+      <h2><a href="hbguts.html">Bee gut and whole-bee libraries</a></h2>
+      <p>Workers, nurses, foragers, and queens, with separate views for gut
+      regions; pick a group from the dataset menu at the top left.</p>
+    </li>
+    <li>
+      <h2><a href="other_niches.html">Hive and colony resource niches</a></h2>
+      <p>Honey, beebread, larvae, royal jelly, and the worker crop and
+      hypopharyngeal glands, the shared food and feeding sites of the colony.</p>
+    </li>
+  </ul>
+
+  <p class="note">Each chart is a single self-contained HTML file (about 3 MB
+  and 1 MB). They work on a phone but are easiest to explore on a larger
+  screen. Click a slice to zoom in; click the center to zoom out.</p>
+
+  <footer>
+    <a href="https://github.com/duancopeland/honey-bee-krona">Source on GitHub</a>.
+    Charts made with <a href="https://github.com/marbl/Krona">Krona</a>.
+  </footer>
+</main>
+</body>
+</html>
